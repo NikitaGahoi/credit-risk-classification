@@ -18,14 +18,26 @@ The analysis unfolded through several pivotal stages:
 
 ## Results
 **Machine Learning Model 1: Logistic Regression**
+The accuracy predicted for the model is 0.99, which is a great accuracy. The model did great for low-risk loans(0){precision = 1, recall = 0.99}, however, when you look at the precision and recall score to high-risk loans(1), the values are 0.85 and 0.91 respectively.
+
+**Reason:** The data is imbalanced as 96.77% of the target values (75036 out of 77536) are for the healthy loans/low-risk loans(0). Therefore the model trained well for the  healthy loans  whereas the data for high-risk loans was insufficient to train the model accurately to predict the defaulters/high-risk loans
+
 <img width="500" alt="image" src="https://github.com/NikitaGahoi/credit-risk-classification/assets/136101293/2318a83e-6ee1-40c9-a7a9-ed6a8373fc09">
 
 
 **Machine Learning Model 2: RandomOverSampler**
-Accuracy: 99.38%
-Balanced Accuracy: 99.37%
-Precision for Healthy Loans: 100%
-Precision for High-Risk Loans: 84%
-Recall for Healthy Loans: 99%
-Recall for High-Risk Loans: 99%
+This model did a great job in predicting both the healthy and the high-risk loans as can be inferred from the high balanced accuracy score of 99.50%. This model has a precision score of 100% for the healthy loans and 99% for the high-risk loans. The precision scores imply that the healthy loans were classified correctly as positive 100% of the times. However, for the high-risk loans, the classification was correct only 84% of the times.
+
+This model has a recall score of 99% for the healthy loans and 100% for the high-risk loans. The scores imply that for all the instances where the loans were actually healthy or when they were high-risk, 99% of the times they were classified correctly.
+
+<img width="500" alt="image" src="https://github.com/NikitaGahoi/credit-risk-classification/assets/136101293/52a49c75-e087-4e94-ad1e-03f177ff736f">
+
+
+## Summary
+
+In summary, the analysis reveals that the RandomOverSampler model (Machine Learning Model 2) surpasses the performance of the Logistic Regression model in terms of accuracy, balanced accuracy, precision, and recall. The second model also proves to be highly effective in addressing the class imbalance issue present in the dataset.
+
+Notably, the RandomOverSampler model excels in the crucial task of identifying high-risk loans, which is of paramount significance for lending institutions. Reducing the probability of defaulting loans by accurately assessing creditworthiness has a substantial impact on the overall profitability of a lending service company.
+
+Hence, we strongly recommend employing the RandomOverSampler method to address class imbalance by resampling the data, followed by the implementation of Logistic Regression. This approach guarantees superior accuracy and recall scores, making it the optimal choice for a lending service company when evaluating and managing credit risk.
 
