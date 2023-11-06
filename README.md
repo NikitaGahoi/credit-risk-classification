@@ -4,7 +4,7 @@ This comprehensive analysis was focused on addressing the critical task of credi
 
 The analysis unfolded through several pivotal stages:
 
-- Data Preprocessing: The loan status labels were stored in the 'y' variable. Features, represented by all columns except 'loan_status,' were stored in the 'X' variable. The balance of labels was checked using 'value_counts,' revealing 75,036 healthy loans and 2,500 high-risk loans in the dataset.
+- **Data Preprocessing:** The loan status labels were stored in the 'y' variable. Features, represented by all columns except 'loan_status,' were stored in the 'X' variable. The balance of labels was checked using 'value_counts,' revealing 75,036 healthy loans and 2,500 high-risk loans in the dataset.
 
 - Data Splitting: The data was divided into training and testing sets using the 'train_test_split' module from sklearn. This created four variables: 'X_train,' 'X_test,' 'y_train,' and 'y_test.' A 'random_state' of 1 was set to ensure consistent splits, providing the same data points for both training and testing across multiple runs.
 
