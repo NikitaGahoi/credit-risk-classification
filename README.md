@@ -18,7 +18,8 @@ The analysis unfolded through several pivotal stages:
 
 ## Results
 **Machine Learning Model 1: Logistic Regression**
-<img width="245" alt="image" src="https://github.com/NikitaGahoi/credit-risk-classification/assets/136101293/a7e476db-1fb9-42e1-a9ae-fe70ac68da00">
+<img width="401" alt="image" src="https://github.com/NikitaGahoi/credit-risk-classification/assets/136101293/2318a83e-6ee1-40c9-a7a9-ed6a8373fc09">
+
 
 **Machine Learning Model 2: RandomOverSampler**
 Accuracy: 99.38%
